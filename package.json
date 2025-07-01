@@ -1,0 +1,22 @@
+{
+  "name": "mobile-roguelike",
+  "version": "1.0.0",
+  "description": "スマホ対応ローグライクゲーム",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'No build step required for static files'",
+    "start": "serve ."
+  },
+  "keywords": [
+    "game",
+    "roguelike",
+    "mobile",
+    "javascript"
+  ],
+  "author": "yasuhiro-mitani",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モバイルローグライク</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-top">
+            <div id="stats">
+                <div>HP: <span id="player-hp">100</span>/<span id="player-max-hp">100</span></div>
+                <div>レベル: <span id="player-level">1</span></div>
+                <div>階層: <span id="floor-level">1</span></div>
+            </div>
+        </div>
+        
+        <div id="game-canvas-container">
+            <canvas id="game-canvas" width="320" height="320"></canvas>
+        </div>
+        
+        <div id="ui-bottom">
+            <div id="controls">
+                <div id="d-pad">
+                    <button class="control-btn" id="up-btn">↑</button>
+                    <div class="control-row">
+                        <button class="control-btn" id="left-btn">←</button>
+                        <button class="control-btn" id="center-btn">⚔</button>
+                        <button class="control-btn" id="right-btn">→</button>
+                    </div>
+                    <button class="control-btn" id="down-btn">↓</button>
+                </div>
+                <div id="action-buttons">
+                    <button class="action-btn" id="inventory-btn">🎒</button>
+                    <button class="action-btn" id="stairs-btn">🪜</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="message-log">
+            <div id="messages"></div>
+        </div>
+    </div>
+    
+    <div id="inventory-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>インベントリ</h3>
+                <button id="close-inventory">×</button>
+            </div>
+            <div id="inventory-list"></div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
